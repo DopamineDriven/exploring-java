@@ -25,15 +25,24 @@
 ```cmd
 java --version
 ```
-- now, to execute the file, cd into the dir containing the java file
-```cmd
-cd exploring-java
+- then, navigate to VSCode, hit control-shift-p
+    - type: Java: Configure Java Runtime
+    - download extension bundle
+- then, open settings.json and set the following
+```json
+{
+"java.semanticHighlighting.enabled": true,
+"java.configuration.checkProjectSettingsExclusions": false,
+"java.home": "C:/Program Files/jdk-14.0.1"
+}
 ```
+- now, to execute the file, right click the file and select "run"
+- then, to execute 
 - the file in the text editor should look as follows (titled QuickStart.java)
 ```Java
 class QuickStart {
     public static void main(String[] args) {
-        System.out.println("Java mother fuckers");
+        System.out.println("Java FTW");
     }
 }
 ```
@@ -44,8 +53,6 @@ javac QuickStart.java
 - this will output a QuickStart.class file in the text editor
     - if you created a repo with Java .gitignore, this file will be .gitignored
 
-- Setup JAVA_HOME variable
-- Update OS PATH variable to use from command prompt
 
 
 
