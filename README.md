@@ -67,15 +67,3 @@ class SensitiveData {
     }
 }
 ```
-
-## Compile source code with Java
-```javac
-javac QuickStart.java
-```
-```Java
-class QuickStart {
-    public static void main(String[] args) {
-        System.out.println("Java mother fuckers");
-    }
-}
-```
